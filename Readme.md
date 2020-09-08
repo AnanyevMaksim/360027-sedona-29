@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Максим Ананьев](https://up.htmlacademy.ru/htmlcss/29/user/360027).
-* Наставник: [Андрей Пудов].
+* Наставник: [Андрей Пудов](https://htmlacademy.ru/profile/kamelot43).
 
 ---
 
