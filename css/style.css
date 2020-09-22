@@ -1,3 +1,23 @@
+/*Fonts*/
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("PT Sans"), local("PTSans")
+  url("../fonts/ptsans.woff2") format("woff2"),
+  url("../fonts/ptsans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: local("PT Sans"), local("PTSans")
+  url("../fonts/ptsansbold.woff2") format("woff2"),
+  url("../fonts/ptsansbold.woff") format("woff");
+}
+
 /*Variables*/
 
 :root {
@@ -42,7 +62,7 @@ img {
 /*Page body*/
 
 .page-body {
-  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -66,6 +86,8 @@ img {
 
 .site-navigation {
   list-style: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 .site-navigation a:hover {
@@ -99,6 +121,8 @@ img {
 .features-list {
   background-color: var(--white);
   list-style: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 .features-list .wide-block {
@@ -114,6 +138,8 @@ img {
 .city-features {
   background-color: var(--white);
   list-style: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 .city-feature-title {
@@ -147,6 +173,8 @@ img {
 
 .hotels-list {
   list-style: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 .hotel-link {
@@ -201,6 +229,12 @@ img {
   line-height: 26px;
   font-weight: 700;
   color: var(--black);
+}
+
+.social-links {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 .footer-copyright {
