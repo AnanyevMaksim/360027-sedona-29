@@ -104,7 +104,8 @@ img {
 
 .main-navigation {
   display: grid;
-  grid-template-columns: 200px 400px;
+  grid-template-columns: 1fr;
+  height: 70px;
   line-height: 26px;
   font-weight: 700;
   color: var(--black);
@@ -112,9 +113,34 @@ img {
 }
 
 .site-navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   list-style: none;
   margin: 0px;
   padding: 0px;
+  text-align: center;
+}
+
+.main-header-logo {
+  position: absolute;
+  left: 50%;
+  margin-left: -69px;
+}
+
+.site-navigation-item:nth-child(1) {
+  grid-column: 1/2;
+}
+
+.site-navigation-item:nth-child(2) {
+  grid-column: 2/3;
+}
+
+.site-navigation-item:nth-child(3) {
+  grid-column: 4/5;
+}
+
+.site-navigation-item:nth-child(4) {
+  grid-column: 5/6;
 }
 
 .site-navigation a:hover {
@@ -161,8 +187,18 @@ img {
 
 .features-list .wide-block {
   background-color: var(--blue-50);
-  grid-column-start: 1;
-  grid-column-end: -1;
+}
+
+.first {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column: 1/4;
+}
+
+.second {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-column: 1/4;
 }
 
 .wide-block .feature-item-title,
@@ -174,6 +210,8 @@ img {
 .city-features {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-column: 1/4;
+  grid-row: 2/3;
   text-align: center;
   background-color: var(--white);
   list-style: none;
