@@ -90,6 +90,7 @@ img {
   width: 1200px;
   margin: 0 auto;
   background-color: var(--white);
+  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
 
 .visually-hidden {
@@ -256,6 +257,51 @@ img {
   list-style: none;
   margin: 0px;
   padding: 0px;
+  display: grid;
+}
+
+.hotels-item {
+  display: grid;
+  grid-template-columns: 135px 1fr 120px;
+  column-gap: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-top: 1px solid var(--grey-150);
+}
+
+.hotel-image {
+  grid-column: 1/2;
+  grid-row: 1/4;
+}
+
+.hotel-name {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-top: -4px;
+  margin-bottom: 4px;
+}
+
+.hotels-type-price {
+  display: grid;
+  grid-template-columns: 112px 1fr;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.hotels-type-price-item {
+  margin: 0px;
+}
+
+.hotel-button-group {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+.hotels-stars {
+  margin: 0px;
+  padding: 0px;
+  grid-column: 3/4;
+  grid-row: 1/2;
 }
 
 .hotel-link {
@@ -263,6 +309,20 @@ img {
   line-height: 26px;
   font-weight: 700;
   color: var(--black);
+}
+
+.hotel-button {
+  text-align: center;
+  padding: 3px 16px;
+}
+
+.hotels-rating {
+  margin: 0px;
+  padding: 0px;
+  grid-column: 3/4;
+  grid-row: 3/4;
+  color: var(--grey-400);
+  background-color: var(--grey-50);
 }
 
 .hotel-link:hover {
@@ -292,11 +352,6 @@ img {
 
 .hotel-button-about:active {
   background-color: var(--blue-150);
-}
-
-.hotel-rating {
-  color: var(--grey-400);
-  background-color: var(--grey-50);
 }
 
 /*Footer*/
