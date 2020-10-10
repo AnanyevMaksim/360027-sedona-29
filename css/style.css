@@ -114,11 +114,13 @@ img {
 
 .site-navigation {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
+  align-items: center;
   list-style: none;
   margin: 0px;
-  padding: 15px 72px;
+  padding: 0px 72px;
+  min-height: 56px;
 }
 
 .main-header-logo {
@@ -128,11 +130,12 @@ img {
 }
 
 .site-navigation-item {
-  width: 228px;
+  width: 25%;
+  text-align: left;
 }
 
-.site-navigation-item:nth-child(4n-1),
-.site-navigation-item:nth-child(4n) {
+.site-navigation-item:nth-child(4n+3),
+.site-navigation-item:nth-child(4n+4) {
   text-align: right;
 }
 
