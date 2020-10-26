@@ -28,7 +28,7 @@
       <main class="container">
           <h2 class="visually-hidden">Фильтр гостиниц</h2>
           <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="filter-group">
+            <fieldset class="filter-group filter-first-group">
               <legend class="name-title">Инфраструктура:</legend>
               <ul class="group-list">
                 <li class="group-item">
@@ -45,7 +45,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="filter-group">
+            <fieldset class="filter-group filter-second-group">
               <legend class="name-title">Тип жилья:</legend>
               <ul class="group-list">
                 <li class="group-item">
@@ -53,11 +53,11 @@
                   <label for="hotel">Гостиница</label>
                 </li>
                 <li class="group-item">
-                  <input class="visually-hidden filter-checkbox" type="checkbox" name="infrastructure" value="Мотель" id="motel">
+                  <input class="visually-hidden filter-checkbox" type="checkbox" name="infrastructure" value="Мотель" id="motel" checked>
                   <label for="motel">Мотель</label>
                 </li>
                 <li class="group-item">
-                  <input class="visually-hidden filter-checkbox" type="checkbox" name="infrastructure" value="Апартаменты" id="apartments">
+                  <input class="visually-hidden filter-checkbox" type="checkbox" name="infrastructure" value="Апартаменты" id="apartments" checked>
                   <label for="apartments">Апартаменты</label>
                 </li>
               </ul>
@@ -88,7 +88,7 @@
         <section class="searching-results">
           <h2 class="visually-hidden">Результаты поиска</h2>
           <div class="filter-wrapper">
-            <p class="results-title">Найдено:3</p>
+            <p class="results-title">Найдено: 3</p>
             <h3 class="filter">Сортировка:</h3>
             <ul class="filter-list">
               <li class="filter-item">
