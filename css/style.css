@@ -333,6 +333,7 @@ img {
 }
 
 .search-hotel {
+  position: relative;
   text-align: center;
   padding-top: 57px;
 }
@@ -371,7 +372,7 @@ img {
 }
 
 .search-form {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
@@ -381,9 +382,26 @@ img {
   padding-bottom: 54px;
   box-sizing: border-box;
   background-color: var(--white);
+  top: 291px;
   left: 50%;
   transform: translate(-50%);
   box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+}
+
+.show-form {
+  display: flex;
+  animation-name: slide-down;
+  animation-duration:  0.6s;
+}
+
+@keyframes slide-down {
+  0% {
+    top: -2000px;
+  }
+
+  100% {
+    top: 291px;
+  }
 }
 
 .search-form,
@@ -516,12 +534,6 @@ img {
 }
 
 .field-wrapper button {
-  padding: 0;
-}
-
-.map {
-  height: 594px;
-  margin: 0;
   padding: 0;
 }
 
@@ -1018,10 +1030,12 @@ img {
   padding-left: 65px;
   padding-right: 63px;
   margin-top: -121px;
+  background-color: var(--transparent-white);
 }
 
-.main-footer {
-  background-color: var(--transparent-white);
+.hotels-footer {
+  margin-top: 0;
+  margin-bottom: 2px;
 }
 
 .footer-contacts {
