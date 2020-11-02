@@ -1,5 +1,3 @@
-/*Fonts*/
-
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -17,8 +15,6 @@
   url("../fonts/ptsansbold.woff2") format("woff2"),
   url("../fonts/ptsansbold.woff") format("woff");
 }
-
-/*Variables*/
 
 :root {
   --white: #ffffff;
@@ -47,8 +43,6 @@
   --grey-600: rgba(0, 1, 1, 0.15);
 }
 
-/*Global*/
-
 body {
   min-width: 1280px;
   margin: 0;
@@ -64,8 +58,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-
-/*Grid*/
 
 .page {
   height: 100%;
@@ -103,8 +95,6 @@ img {
   border: 0;
   clip: rect(0 0 0 0);
 }
-
-/*Main navigation*/
 
 .main-navigation {
   min-height: 100%;
@@ -163,8 +153,6 @@ img {
 .site-navigation-item .active:active {
   color: var(--brown-50);
 }
-
-/*Main page*/
 
 .main-background {
   position: relative;
@@ -236,6 +224,8 @@ img {
   font-size: 21px;
   font-weight: 700;
   padding-top: 47px;
+  padding-left: 120px;
+  padding-right: 120px;
   margin: 0;
   color: var(--black);
 }
@@ -243,6 +233,11 @@ img {
 .feature-item-number {
   margin-top: 25px;
   margin-bottom: 23px;
+}
+
+.feature-item-text {
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .features-list .wide-block {
@@ -325,6 +320,8 @@ img {
 
 .city-feature-text {
   margin-top: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .features-list .narrow-block {
@@ -536,8 +533,6 @@ img {
 .field-wrapper button {
   padding: 0;
 }
-
-/*Hotels page*/
 
 .range-filter {
   width: 316px;
@@ -1004,10 +999,10 @@ img {
 .stars-item:first-child {
   margin-right: 5px;
 }
+
 .stars-item:last-child {
   margin-right: 0;
 }
-
 
 .hotel-rating {
   color: var(--grey-400);
@@ -1018,18 +1013,18 @@ img {
   padding-left: 15px;
 }
 
-/*Footer*/
-
 .page-footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   text-align: center;
   align-items: center;
+  position: relative;
+  z-index: 1;
   padding-top: 29px;
   padding-bottom: 37px;
   padding-left: 65px;
   padding-right: 63px;
-  margin-top: -121px;
+  margin-top: -130px;
   background-color: var(--transparent-white);
 }
 
@@ -1104,6 +1099,7 @@ img {
   justify-content: center;
   align-items: center;
 }
+
 .text-copyright {
   line-height: 26px;
   color: var(--black);
