@@ -41,6 +41,8 @@
   --grey-500: #333333;
   --grey-550: #231f20;
   --grey-600: rgba(0, 1, 1, 0.15);
+  --page-wrapper-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+  --search-form-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
 }
 
 body {
@@ -82,7 +84,7 @@ img {
   min-height: 100%;
   margin: 0 auto;
   background-color: var(--white);
-  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+  box-shadow: var(--page-wrapper-shadow);
 }
 
 .visually-hidden {
@@ -157,6 +159,7 @@ img {
 .main-background {
   position: relative;
   background-image: url(../img/main-background-photo.jpg);
+  background-color: var(--blue-100);
   background-repeat: no-repeat;
   width: 1200px;
   height: 509px;
@@ -238,6 +241,10 @@ img {
 .feature-item-text {
   padding-left: 40px;
   padding-right: 40px;
+}
+
+.feature-background {
+  background-color: var(--brown-50);
 }
 
 .features-list .wide-block {
@@ -382,7 +389,7 @@ img {
   top: 291px;
   left: 50%;
   transform: translate(-50%);
-  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+  box-shadow: var(--search-form-shadow);
 }
 
 .show-form {
@@ -530,8 +537,12 @@ img {
   margin-left: 50px;
 }
 
-.field-wrapper button {
+.field-wrapper .button {
   padding: 0;
+}
+
+.map {
+  background-image: url(../img/location-map.jpg);
 }
 
 .range-filter {
@@ -590,7 +601,7 @@ img {
   padding-bottom: 31px;
   box-sizing: border-box;
   background-image: url(../img/filter-background.jpg);
-  background-color: var(--blue-120);
+  background-color: var(--blue-100);
   min-height: 217px;
 }
 
@@ -725,6 +736,12 @@ img {
   width: 27px;
 }
 
+.filter-checkbox:focus + label::before,
+.toggle:focus,
+.sort-up:focus::after {
+  outline: 2px solid var(--grey-380);
+}
+
 .range-controls .toggle:hover {
   transform: scale(1.2);
 }
@@ -734,11 +751,20 @@ img {
   color: var(--black);
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 .filter-wrapper {
   display: flex;
   align-items: center;
   padding-left: 73px;
-  padding-right: 70px;
+  padding-right: 73px;
   padding-top: 29px;
 }
 
@@ -813,12 +839,14 @@ img {
 .sort-up,
 .sort-down {
   position: relative;
+  display: block;
+  width: 10px;
+  height: 10px;
 }
 
 .sort-up::after,
 .sort-down::after {
   position: absolute;
-  left: -13px;
   top: 0;
   content: "";
   border-left: 6px solid transparent;
@@ -826,12 +854,12 @@ img {
 }
 
 .sort-up::after {
-  border-bottom: 10px solid var(--grey-200);
-  top: 8px;
+  border-bottom: 11px solid var(--grey-200);
+  top: 0;
 }
 
 .sort-down::after {
-  border-top: 10px solid var(--grey-200);
+  border-top: 11px solid var(--grey-200);
 }
 
 .sort-down.active::after {
@@ -847,8 +875,7 @@ img {
 }
 
 .sort-up {
-  margin-right: 25px;
-  margin-bottom: 4px;
+  margin-right: 15px;
 }
 
 .hotels-list {
