@@ -6,7 +6,7 @@
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body class="page-body">
@@ -89,11 +89,11 @@
           <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
           <p class="search-hotel-title">Заинтересовались?</p>
           <p class="search-hotel-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-          <a class="button search-hotel-button" href="#">Поиск гостиницы в Седоне</a>
+          <a class="hotel-button search-hotel-button" href="#">Поиск гостиницы в Седоне</a>
           <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
             <p class="field-wrapper">
               <label class="check-in" for="check-in">Дата заезда:</label>
-              <input class="date-picker" id="check-in" type="text" name="check-in" value="24 апреля 2017" required>
+              <input class="date-picker" id="check-in" type="text" name="check-in">
               <button class="calendar" type="button" name="calendar"><span class="visually-hidden">Календарь для выбора даты заезда</span>
                 <svg aria-hidden="true" focusable="false" class="form-icon" width="21" height="23"
                 xmlns="http://www.w3.org/2000/svg">
@@ -106,7 +106,7 @@
             </p>
             <p class="field-wrapper">
               <label class="check-out" for="check-out">Дата выезда:</label>
-              <input class="date-picker" id="check-out" type="text" name="check-out" value="4 июля 2017" required>
+              <input class="date-picker" id="check-out" type="text" name="check-out">
               <button class="calendar" type="button" name="calendar"><span class="visually-hidden">Календарь для выбора даты выезда</span>
                 <svg aria-hidden="true" focusable="false" class="form-icon" width="21" height="23"
                 xmlns="http://www.w3.org/2000/svg">
@@ -125,7 +125,7 @@
                 <path d="M0 0h12v3H0z" />
                 </svg>
               </button>
-              <input class="counter adults" id="guests" type="text" name="adults" value="2" required>
+              <input class="counter adults" id="guests" type="number" name="adults">
               <button class="plus" type="button" name="plus"><span class="visually-hidden">Плюс</span>
                 <svg aria-hidden="true" focusable="false" class="form-icon" width="11" height="11" viewBox="0 0 11 11"
                 xmlns="http://www.w3.org/2000/svg">
@@ -142,7 +142,7 @@
                 <path d="M0 0h12v3H0z" />
                 </svg>
               </button>
-              <input class="counter children" id="guests-children" type="text" name="children" value="0" required>
+              <input class="counter children" id="guests-children" type="number" name="children">
               <button class="plus" type="button" name="plus"><span class="visually-hidden">Плюс</span>
                 <svg aria-hidden="true" focusable="false" class="form-icon" width="11" height="11" viewBox="0 0 11 11"
                 xmlns="http://www.w3.org/2000/svg">
